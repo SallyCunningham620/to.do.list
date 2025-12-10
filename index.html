@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="609a232ab53e413e38d2.css">
+<script defer src="output.js"></script></head>
+<body>
+    <div id="main-container">
+        <h1 class="title">To Do List</h1>
+        <div id="projects">
+            <nav id="projects-left">
+                <h2 class="projects-title">Projects</h2>
+                <button class="open-form-button" id="new-project-btn" data-form-id="new-project-form">Add Projects</button>
+                <!--Form to add new projects-->
+                <div class="form-div" id="form-div">
+                    <form class="hidden-form" id="new-project-form">
+                        <h3 id="new-project-form-title"></h3>
+                        <label for="project-title">Project Title
+                            <input type="text" placeholder="Enter Project Title" id="project-title" name="project-title" maxlength="50" required>
+                        </label>
+                        <div>
+                            <button type="submit" id="add-project-btn" value="default">Add Project</button>
+                            <button type="button" id="close-project-form-btn" class="close-form-button">Close</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="project-container" id="projects-container"></div>
+            </nav>
+            <div id="tasks-right">
+                <h2 class="tasks-title" id="tasks-title">Tasks</h2>
+                <button class="open-form-button" id="new-task-btn" data-form-id="new-task-form">Add Task</button>
+                <!--Form to add new tasks-->
+                <div class="form-div" id="form-div">
+                    <form class="hidden-form" id="new-task-form">
+                        <h3 id="new-task-form-title"></h3>
+                        <label for="task-title">Task Title (required)
+                            <input type="text" placeholder="Enter Task Title" id="task-title" name="task-title" maxlength="50" required>
+                        </label>
+                        <label for="task-description">Task Description
+                            <input type="text" placeholder="Enter Task Description" id="task-description" name="task-description" maxlength="100">
+                        </label>
+                        <label for="task-due-date">Task Due Date
+                            <input type="date" placeholder="MM/DD/YYYY" id="task-due-date" name="task-due-date">
+                        </label>
+                        <label for="task-priority">Task Priority
+                            <select id="task-priority" name="task-priority">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </label>
+                        <div>
+                            <button type="submit" id="add-task-btn" value="default">Add Task</button>
+                            <button type="button" id="close-task-form-btn" class="close-form-button">Close</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="project-task-items" id="project-task-items"></div>
+            </div>
+        </div>
+        <!--Portfolio Nav-->
+        <div class="port-nav">
+            <link><a href="https://sallycunningham620.github.io/sallycunningham.developer.1/">View Sally Cunningham Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>
