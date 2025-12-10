@@ -293,4 +293,7 @@
         width: 150px;
         justify-self: center;
     }
+    .port-nav {
+        left: 35px;
+    }
 }
